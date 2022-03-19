@@ -1,8 +1,26 @@
 body {
-  padding: 50px;
+  padding: 100px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.box {
+
+}
+.column {
+  border-radius: 25px;
+  float: left;
+  width: 33.33%;
+  border: solid;
+  color: 872937;
+  padding: 20px;
+  margin: 0 auto;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
