@@ -4,25 +4,19 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #872937;
 }
 
 .row {
-  border: 1px solid green;
-  height: 350px;
-  padding: 50px;
+  border: 0px;
   margin-left: 300px;
   margin-right: 300px;
-  align-items: center;
+  padding: 10px;
 }
-.row::after {
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
+
 .col {
   display: inline-block;
-  width: auto;
+  width: 33%;
 
 }
 .box {
