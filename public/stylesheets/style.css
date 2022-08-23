@@ -1,5 +1,14 @@
 body {
-  padding: 100px;
+  margin: 0;
+  padding: 70px 5% 5%;
+}
+.spu-page-wrapper {
+  color: #872937;
+  font-size: 16px;
+  font-family: 'Trade Gothic LT Pro', Arial, sans-serif;
+  padding: 10px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 a {
@@ -9,8 +18,8 @@ a {
 
 .row {
   border: 0px;
-  margin-left: 350px;
-  margin-right: 350px;
+  margin-left: 370px;
+  margin-right: 370px;
   padding: 10px;
 }
 
@@ -77,5 +86,29 @@ a {
   display: flex;
   justify-content: center;
 }
+
+.spu-icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #872937;
+  border-radius: 25px;
+}
+
+.spu-icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.spu-icon-bar a:hover {
+  background-color: #000;
+}
+
 
 

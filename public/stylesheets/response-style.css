@@ -1,0 +1,76 @@
+/*header - nav bar*/
+header {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-height: 50px;
+    width: 100%;
+    background-color: white;
+    border: 1px black;
+    z-index: 9000;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    border-right: none;
+    text-decoration: none;
+}
+
+header nav a span {
+    /*padding: 14px;*/
+}
+
+.response-nav-bar a {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+#response-nav {
+    color: #000000;
+    font-family: 'SangBleu Empire';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+}
+
+.response-nav-bar .menu-items {
+    color: #5C5C5C;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 31px;
+}
+
+.response-nav-bar .menu-items:hover:not(.active) {
+    background-color: #872937;
+    color: white;
+}
+
+#response-nav:hover:not(.active) {
+    color: #872937;
+}
+/*header - nav bar*/
+
+
