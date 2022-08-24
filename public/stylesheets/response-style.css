@@ -1,4 +1,4 @@
-/*header - nav bar*/
+/*HEADER*/
 header {
     display: block;
     position: fixed;
@@ -14,8 +14,8 @@ header {
 header nav {
     display: flex;
     align-items: center;
-    position: fixed;
     justify-content: center;
+    position: fixed;
     left: 0px;
     width: 100%;
     z-index: 100;
@@ -38,7 +38,9 @@ header nav a span {
 }
 
 .response-nav-bar a {
-    display: block;
+    /*display: block;*/
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -51,7 +53,8 @@ header nav a span {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 44px;
+    /*line-height: 44px;*/
+    margin: auto;
 }
 
 .response-nav-bar .menu-items {
@@ -59,8 +62,9 @@ header nav a span {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 31px;
+    font-size: 16px;
+    /*line-height: 31px;*/
+    margin: auto;
 }
 
 .response-nav-bar .menu-items:hover:not(.active) {
@@ -71,6 +75,205 @@ header nav a span {
 #response-nav:hover:not(.active) {
     color: #872937;
 }
-/*header - nav bar*/
+/*HEADER*/
+
+/*MAIN*/
+main {
+    display: block;
+    margin-top: 50px;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 64px;
+    position: absolute;
+    left: 0px;
+}
+
+    /*FEATURED CONTENT*/
+section {
+    position: relative;
+}
+
+#featured-content {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+}
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    #featured-content {
+        display: grid;
+        grid-template-columns: 6fr;
+    }
+}
+
+#featured-content div:first-of-type {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    padding: 30px;
+    width: 100%;
+}
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    #featured-content div:first-of-type {
+        padding: 18px;
+    }
+}
+
+#featured-content div:first-of-type h1 {
+    font-family: 'SangBleu Empire';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 82px;
+    display: flex;
+    align-items: center;
+    color: #000004;
+}
+
+#featured-content div:first-of-type h4 {
+    font-family: 'SangBleu Empire';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #69757A;
+}
+
+#featured-content div:first-of-type p {
+    font-family: 'Trade Gothic Next LT Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #221E1F;
+}
+
+#featured-content div:last-of-type {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+
+#featured-img {
+    background-image: url('../images/MIKE-11-scaled_1210x580_acf_cropped.jpeg');
+    /*height:100%;*/
+    padding-bottom: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-left: 1px solid black;
+    position: relative;
+}
+    /*FEATURED CONTENT*/
+
+    /*LATEST ARTICLES*/
+.latest-articles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 120px;
+    gap: 60px;
+    width: 100%;
+}
+
+.latest-articles div:first-of-type {
+    font-family: 'Trade Gothic Next LT Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #000000;
+    border-bottom: 7px solid black;
+    width: 100%;
+}
+
+.latest-articles div:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 100%;
+}
+
+.latest-articles div:nth-of-type(2) .article-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px 24px 0px 0px;
+    gap: 14px;
+    border-right: 0.5px solid #000000;
+}
+
+/*CARD IMAGE*/
+.latest-articles div:nth-of-type(2) .article-card .div:first-child {
+    width: 100%;
+    height: 70%;
+}
+/*CARD IMAGE*/
+
+.latest-articles div:nth-of-type(2) .article-card .div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+}
+
+.latest-articles div:nth-of-type(2) .article-card .div:nth-of-type(2) .heading-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 100%;
+}
+
+.latest-articles div:nth-of-type(2) .article-card .div:nth-of-type(2) .heading-content .category {
+    font-family: 'Trade Gothic Next LT Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #5C5C5C;
+    width: 100%;
+}
+
+.latest-articles div:nth-of-type(2) .article-card .div:nth-of-type(2) .heading-content .title {
+    font-family: 'Trade Gothic Next LT Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    color: #3E2B2E;
+    width: 100%;
+}
+
+.latest-articles div:nth-of-type(2) .article-card .div:nth-of-type(2) .date {
+    font-family: 'Trade Gothic Next LT Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #221E1F;
+    width: 100%;
+}
 
 
+/*LATEST ARTICLES*/
+/*MAIN*/
