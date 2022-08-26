@@ -1,3 +1,7 @@
+a {
+    vertical-align: baseline;
+}
+
 /*HEADER*/
 header {
     display: block;
@@ -115,7 +119,7 @@ section {
     justify-content: center;
     flex-direction: column;
     border-bottom: 1px solid black;
-    padding: 30px;
+    padding: 30px 120px;
     width: 100%;
 }
 @media only screen and (max-width: 620px) {
@@ -186,7 +190,7 @@ section {
     width: 100%;
 }
 
-.latest-articles div:first-of-type {
+.latest-articles .section-header {
     font-family: 'Trade Gothic Next LT Pro';
     font-style: normal;
     font-weight: 700;
@@ -199,7 +203,7 @@ section {
     width: 100%;
 }
 
-.latest-articles div:nth-of-type(2) {
+.latest-articles .article-row {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -208,7 +212,7 @@ section {
     width: 100%;
 }
 
-.latest-articles div:nth-of-type(2) .article-card {
+.latest-articles .article-row .article-card {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -216,16 +220,23 @@ section {
     padding: 0px 24px 0px 0px;
     gap: 14px;
     border-right: 0.5px solid #000000;
+
 }
 
 /*CARD IMAGE*/
-.latest-articles div:nth-of-type(2) .article-card .div:first-child {
+.latest-articles .article-row .article-card div {
     width: 100%;
-    height: 70%;
+    padding: 0px;
+    /*aspect-ratio: 4/3;*/
+}
+.latest-articles .article-row .article-card div img {
+    width: 100%;
+    height: auto;
+    /*aspect-ratio: 4/3;*/
 }
 /*CARD IMAGE*/
 
-.latest-articles div:nth-of-type(2) .article-card .div:nth-of-type(2) {
+.latest-articles .article-row .article-card .text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -234,7 +245,7 @@ section {
     width: 100%;
 }
 
-.latest-articles div:nth-of-type(2) .article-card .div:nth-of-type(2) .heading-content {
+.latest-articles .article-row .article-card .text .heading-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -243,7 +254,7 @@ section {
     width: 100%;
 }
 
-.latest-articles div:nth-of-type(2) .article-card .div:nth-of-type(2) .heading-content .category {
+.latest-articles .article-row .article-card .text .heading-content .category {
     font-family: 'Trade Gothic Next LT Pro';
     font-style: normal;
     font-weight: 700;
@@ -254,7 +265,7 @@ section {
     width: 100%;
 }
 
-.latest-articles div:nth-of-type(2) .article-card .div:nth-of-type(2) .heading-content .title {
+.latest-articles .article-row .article-card .text .heading-content .title {
     font-family: 'Trade Gothic Next LT Pro';
     font-style: normal;
     font-weight: 700;
@@ -264,7 +275,7 @@ section {
     width: 100%;
 }
 
-.latest-articles div:nth-of-type(2) .article-card .div:nth-of-type(2) .date {
+.latest-articles .article-row .article-card .text .date {
     font-family: 'Trade Gothic Next LT Pro';
     font-style: normal;
     font-weight: 400;
@@ -276,4 +287,128 @@ section {
 
 
 /*LATEST ARTICLES*/
+
+.latest-article-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0 120px;
+    gap: 60px;
+    width: 100%;
+    /*max-width: 1512px;*/
+}
+
+.latest-article-section .section-header {
+    font-family: 'Trade Gothic Next LT Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #000000;
+    border-bottom: 7px solid black;
+    width: 100%;
+}
+
+.latest-article-section .article-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.latest-article-section .article-container .article-card {
+    position: relative;
+    width: 100%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+    gap: 14px;
+}
+
+.latest-article-section .article-container .article-card:nth-child(4n+1) {
+    flex: 0 0 25%;
+    padding: 0 24px 0 0;
+    box-shadow: none;
+}
+
+.latest-article-section .article-container .article-card:nth-child(4n+2) {
+    flex: 0 0 25%;
+    padding: 0 24px;
+    box-shadow: -0.5px 0 0 0 black;
+}
+
+.latest-article-section .article-container .article-card:nth-child(4n+3) {
+    flex: 0 0 25%;
+    padding: 0 24px;
+    box-shadow: -0.5px 0 0 0 black;
+}
+
+.latest-article-section .article-container .article-card:nth-child(4n) {
+    flex: 0 0 25%;
+    padding: 0 0 0 24px;
+    box-shadow: -0.5px 0 0 0 black;
+}
+
+.latest-article-section .article-container .article-card img {
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    /*width: 282px;*/
+    height: 297px;
+    object-fit: cover;
+}
+
+.latest-article-section .article-container .text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.latest-article-section .article-container .text .heading-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 100%;
+}
+
+.latest-article-section .article-container .text .heading-content .category {
+    font-family: 'Trade Gothic Next LT Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #5C5C5C;
+    width: 100%;
+}
+
+.latest-article-section .article-container .text .heading-content .title {
+    font-family: 'Trade Gothic Next LT Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    color: #3E2B2E;
+    width: 100%;
+}
+
+.latest-article-section .article-container .text .date {
+    font-family: 'Trade Gothic Next LT Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #221E1F;
+    width: 100%;
+}
+
 /*MAIN*/
