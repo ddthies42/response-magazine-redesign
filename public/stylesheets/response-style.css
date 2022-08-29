@@ -422,5 +422,116 @@ section {
 /*1-MAIN*/
 
 /*1-FOOTER*/
+.footer-container {
+    display: block;
+    height: 600px;
+    position: relative;
+    top: 3000px;
+    object-position: center bottom;
+    bottom: 0;
+    padding-left: calc(50vw - 4rem);
+}
 
+.footer-container .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    box-shadow: -4px -4px 25px rgba(0, 0, 0, 0.16);
+    padding: 30px 40px;
+    position: relative;
+    float: right;
+    /*left: 45%;*/
+    width: 100%;
+    right: 0;
+    top: -4rem;
+    gap: 18px;
+    z-index: 2;
+    /*object-position: top;*/
+}
+
+.footer-container .footer-wrapper h3 {
+    font-family: 'SangBleu Empire';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 88px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.footer-container .footer-wrapper .footer-items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: 100%;
+    gap: 15px;
+}
+
+.footer-container .footer-wrapper .footer-items-container .footer-items-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+    border-top: 1.5px solid #000000;
+    width: 100%;
+}
+
+.footer-container .footer-wrapper .footer-items-container .footer-items-wrapper .text {
+    font-family: "SangBleu Empire", serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    width: 100%;
+    color: #000000;
+}
+
+.footer-container .footer-wrapper .social-media-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+}
+
+.footer-container .footer-wrapper .social-media-container img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-container .footer-wrapper .copyright {
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.footer-container .footer-image img {
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    object-fit: cover;
+    object-position: center top;
+    position: absolute;
+    right: 0;
+    height: 700px;
+    top: 17.79%;
+    z-index: 1;
+    /*background: url("../images/SPU_Main_LoRes_1210x580_acf_cropped.jpeg");*/
+}
 /*1-FOOTER*/
