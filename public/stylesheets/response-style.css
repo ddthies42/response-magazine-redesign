@@ -1,5 +1,7 @@
 body {
     gap: 0;
+    position: relative;
+    min-height: 100vh;
 }
 a {
     vertical-align: baseline;
@@ -58,7 +60,7 @@ header nav a span {
     position: relative;
 }
 
-#response-nav {
+.response-nav {
     color: #000000;
     font-family: 'SangBleu Empire';
     font-style: normal;
@@ -83,7 +85,7 @@ header nav a span {
     color: white;
 }
 
-#response-nav:hover:not(.active) {
+.response-nav:hover:not(.active) {
     color: #872937;
 }
 /*1-HEADER*/
@@ -95,14 +97,16 @@ main {
     margin-top: 50px;
 }
 
-#main-content {
+.main-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    /*padding: 0px;*/
     gap: 64px;
     position: absolute;
     left: 0px;
+    padding-bottom: 95rem;
+    width: 100%;
 }
 
 /*2--FEATURED CONTENT--*/
@@ -110,19 +114,19 @@ section {
     position: relative;
 }
 
-#featured-content {
+.featured-content {
     display: grid;
     grid-template-columns: 3fr 3fr;
 }
 @media only screen and (max-width: 620px) {
     /* For mobile phones: */
-    #featured-content {
+    .featured-content {
         display: grid;
         grid-template-columns: 6fr;
     }
 }
 
-#featured-content div:first-of-type {
+.featured-content div:first-of-type {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -133,12 +137,12 @@ section {
 }
 @media only screen and (max-width: 620px) {
     /* For mobile phones: */
-    #featured-content div:first-of-type {
+    .featured-content div:first-of-type {
         padding: 18px;
     }
 }
 
-#featured-content div:first-of-type h1 {
+.featured-content div:first-of-type h1 {
     font-family: 'SangBleu Empire';
     font-style: normal;
     font-weight: 700;
@@ -149,7 +153,7 @@ section {
     color: #000004;
 }
 
-#featured-content div:first-of-type h4 {
+.featured-content div:first-of-type h4 {
     font-family: 'SangBleu Empire';
     font-style: normal;
     font-weight: 400;
@@ -161,7 +165,7 @@ section {
     color: #69757A;
 }
 
-#featured-content div:first-of-type p {
+.featured-content div:first-of-type p {
     font-family: 'Trade Gothic Next LT Pro';
     font-style: normal;
     font-weight: 700;
@@ -171,13 +175,13 @@ section {
     color: #221E1F;
 }
 
-#featured-content div:last-of-type {
+.featured-content div:last-of-type {
     position: relative;
     overflow: hidden;
     border-bottom: 1px solid black;
 }
 
-#featured-img {
+.featured-img {
     background-image: url('../images/MIKE-11-scaled_1210x580_acf_cropped.jpeg');
     /*height:100%;*/
     padding-bottom: 100%;
@@ -424,9 +428,9 @@ section {
 /*1-FOOTER*/
 .footer-container {
     display: block;
-    height: 600px;
-    position: relative;
-    top: 3000px;
+    height: auto;
+    width: 100%;
+    position: absolute;
     object-position: center bottom;
     bottom: 0;
     padding-left: calc(50vw - 4rem);
@@ -480,17 +484,26 @@ section {
 }
 
 .footer-container .footer-wrapper .footer-items-container .footer-items-wrapper .text {
-    font-family: "SangBleu Empire", serif;
-    font-style: italic;
+    font-family: 'Trade Gothic Next LT Pro';
+    font-style: normal;
     font-weight: 700;
     font-size: 25px;
-    line-height: 37px;
+    line-height: 31px;
     display: flex;
     align-items: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     width: 100%;
     color: #000000;
+    /*border-top: 1.5px solid #000000;*/
+}
+
+.footer-container .footer-wrapper .footer-items-container .footer-items-wrapper .text:hover:not(.active) {
+    color: #872937;
+}
+
+.footer-container .footer-wrapper .footer-items-container .footer-items-wrapper:hover:not(.active) {
+    border-top: 1.5px solid #872937;
 }
 
 .footer-container .footer-wrapper .social-media-container {
@@ -529,7 +542,7 @@ section {
     object-position: center top;
     position: absolute;
     right: 0;
-    height: 700px;
+    height: auto;
     top: 17.79%;
     z-index: 1;
     /*background: url("../images/SPU_Main_LoRes_1210x580_acf_cropped.jpeg");*/
