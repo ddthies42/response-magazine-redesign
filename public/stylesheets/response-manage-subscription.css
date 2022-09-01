@@ -118,3 +118,53 @@
 .subscription-container .dropdown .dropdown-items {
     display: block;
 }
+
+/*Form*/
+.subscribe--action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 64px;
+    width: 100%;
+}
+
+.subscribe--action .fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+}
+
+.subscribe--action .fields .name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;
+}
+
+.subscribe--action .fields .name-container .name-label {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 0px;
+    gap: 10px;
+    width: 100%;
+}
+
+label {
+    font-family: 'Trade Gothic Next LT Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #333333;
+}
+
+/*Form*/
