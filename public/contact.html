@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <meta name="author" content="Thy Tran">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/response-style.css">
+    <link rel="stylesheet" href="stylesheets/response-manage-subscription.css">
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+</head>
+<body>
+
+<!--MAIN -->
+<!--HEADER -->
+<header>
+    <nav class="response-nav-bar" role="navigation">
+        <a class="response-nav" href="response-index.html">
+            <span>Response</span>
+        </a>
+        <a class="menu-items" href="#">
+            <span>Campus</span>
+        </a>
+        <a class="menu-items" href="#">
+            <span>Alumni</span>
+        </a>
+        <a class="menu-items" href="#">
+            <span>Features</span>
+        </a>
+        <a class="menu-items" href="#">
+            <span>Notes</span>
+        </a>
+        <a class="menu-items" href="#">
+            <span>About</span>
+        </a>
+    </nav>
+</header>
+<!--HEADER -->
+<main role="main" class="main-content">
+    <div class="subscription-container">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>We want to hear from you!</p>
+            <p>Use the form below to send us your comments about the printed or online version of Response, a Letter to
+                the Editor, or a class note. You can also send us your address change.</p>
+            <p>Include an email address so we can acknowledge that we’ve received your communication. You may also contact
+                Response at <a href="mailto:response@spu.edu">response@spu.edu</a> or <a href="tel:2062812051">
+                    206-281-2051 </a>.</p>
+            <p><strong>Response Magazine</strong><br>
+            3307 Third Avenue West, Ste 301<br>
+            Seattle, WA 98119
+            </p>
+            <p>If you want to manage your subscription by subscribing to Response, updated mailing address, unsubscribing
+                or sending class note/letter/comment, please fill out <a href="manage-subscription.html">this form</a>.</p>
+        </div>
+        <div class="action-form" style="width: 100%;">
+            <form class="subscribe--action" style="width: 100%;">
+                <div class="inputs">
+                    <div class="name">
+                        <label class="input-title">Name <span style="color: red">*</span></label>
+                        <div class="double-field-container">
+                            <div>
+                                <input type="text" name="first-name" required>
+                                <span class="sub-desc">First Name</span>
+                            </div>
+                            <div>
+                                <input type="text" name="last-name" required>
+                                <span class="sub-desc">Last Name</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="address">
+                        <label class="input-title">Address <span style="color: red">*</span></label>
+                        <div class="lines-city">
+                            <input type="text" name="line-1" required>
+                            <span class="sub-desc">Address Line 1</span>
+                            <input type="text" name="line-2">
+                            <span class="sub-desc">Address Line 2</span>
+                            <input type="text" name="city" required>
+                            <span class="sub-desc">City</span>
+                        </div>
+                        <div class="state-zip">
+                            <div class="double-field-container">
+                                <div>
+                                    <input type="text" name="state" required>
+                                    <span class="sub-desc">State</span>
+                                </div>
+                                <div>
+                                    <input type="number" name="zip" required>
+                                    <span class="sub-desc">Zip</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <div class="lines-city">
+                            <label class="input-title">Email <span style="color: red">*</span></label>
+                            <input type="email" name="email" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <aside>
+                        <a href="#" target="_blank" class="response-button response-button_primary">
+                            Submit
+                        </a>
+                    </aside>
+                </div>
+            </form>
+            <div class="update-container" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="footer-container">
+        <div class="footer-wrapper">
+            <h3>Response Magazine</h3>
+            <div class="footer-items-container">
+                <div class="footer-items-wrapper">
+                    <a class="text" href="manage-subscription.html">Manage your subscription</a>
+                </div>
+                <div class="footer-items-wrapper">
+                    <a class="text" href="contact.html">contact us</a>
+                </div>
+                <div class="footer-items-wrapper">
+                    <a class="text">about response</a>
+                </div>
+                <div class="footer-items-wrapper">
+                    <a class="text">visit spu</a>
+                </div>
+                <div class="footer-items-wrapper">
+                    <a class="text">become a student</a>
+                </div>
+                <div class="footer-items-wrapper">
+                    <a class="text">submit a story idea</a>
+                </div>
+            </div>
+            <div class="social-media-container">
+                <img src="images/icon--facebook.svg">
+                <img src="images/icon--twitter.svg">
+                <img src="images/icon--instagram.svg">
+                <img src="images/icon--youtube.svg">
+                <img src="images/icon--linkedin.svg">
+                <img src="images/icon--tiktok.svg">
+            </div>
+            <div class="copyright">© 2022 Seattle Pacific University</div>
+        </div>
+        <div class="footer-image">
+            <img src="images/SPU_Main_LoRes_1210x580_acf_cropped.jpeg">
+        </div>
+    </footer>
+    <!--FOOTER-->
+</main>
+<!--MAIN -->
+
+</body>
+</html>

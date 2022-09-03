@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 98px 170px 98px 104px;
-    gap: 80px;
+    padding: 98px 254px 98px 104px;
+    gap: 72px;
     width: 100%;
     height: auto;
     float: right;
@@ -129,7 +129,7 @@
     width: 100%;
 }
 
-.subscribe--action .fields {
+.subscribe--action .inputs {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -138,20 +138,135 @@
     width: 100%;
 }
 
-.subscribe--action .fields .name-container {
+.subscribe--action .inputs .name {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     width: 100%;
 }
 
-.subscribe--action .fields .name-container .name-label {
+.subscribe--action .inputs .name .input-title {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px 0px;
+    padding: 10px 0;
     gap: 10px;
+    width: 100%;
+}
+
+.double-field-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 20px;
+    width: 100%;
+}
+
+.double-field-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: 100%;
+}
+
+.sub-desc {
+    font-family: 'Trade Gothic Next LT Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #858585;
+    width: 100%;
+    padding-bottom: 12px;
+}
+
+.subscribe--action .inputs .address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: 100%;
+}
+
+.subscribe--action .inputs .address .input-title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 0;
+    gap: 10px;
+    width: 100%;
+}
+
+.subscribe--action .inputs .address .lines-city {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: 100%;
+}
+
+.subscribe--action .inputs .address .state-zip {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 20px;
+    width: 100%;
+}
+
+.subscribe--action .inputs .email-phone {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 20px;
+    width: 100%;
+}
+
+.subscribe--action .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+.response-button {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 1em  .6em  .6em  0;
+    padding: .8em 1.6em;
+    border: 2px solid black;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    font-size: 1.2rem;
+    font-family: 'Trade Gothic LT Pro', Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.response-button_primary{
+    background-color: #232529;
+    border: 2px solid #232529;
+    color: white;
+    box-shadow: 4px 4px rgba(0,0,0,0.2);
+}
+.response-button_primary:hover{
+    background-color: #333333;
+    box-shadow: none;
+    transform: translate(4px, 4px);
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    height: 48px;
     width: 100%;
 }
 
@@ -165,6 +280,10 @@ label {
     align-items: center;
     text-transform: capitalize;
     color: #333333;
+}
+
+p {
+    margin: 0em;
 }
 
 /*Form*/

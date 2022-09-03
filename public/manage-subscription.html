@@ -53,6 +53,69 @@
       <option value="unsubscribe">Unsubscribe from Response</option>
       <option value="note">Send Class Note/Letter/Comment</option>
     </select>
+    <div class="action-form" style="width: 100%;">
+      <form class="subscribe--action" style="width: 100%;">
+        <div class="inputs">
+          <div class="name">
+            <label class="input-title">Name <span style="color: red">*</span></label>
+            <div class="double-field-container">
+              <div>
+                <input type="text" name="first-name" required>
+                <span class="sub-desc">First Name</span>
+              </div>
+              <div>
+                <input type="text" name="last-name" required>
+                <span class="sub-desc">Last Name</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="address">
+            <label class="input-title">Current Address <span style="color: red">*</span></label>
+            <div class="lines-city">
+              <input type="text" name="line-1" required>
+              <span class="sub-desc">Address Line 1</span>
+              <input type="text" name="line-2">
+              <span class="sub-desc">Address Line 2</span>
+              <input type="text" name="city" required>
+              <span class="sub-desc">City</span>
+            </div>
+            <div class="state-zip">
+              <div class="double-field-container">
+                <div>
+                  <input type="text" name="state" required>
+                  <span class="sub-desc">State</span>
+                </div>
+                <div>
+                  <input type="number" name="zip" required>
+                  <span class="sub-desc">Zip</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="email-phone">
+            <div class="double-field-container">
+              <div>
+                <label class="input-title">Email</label>
+                <input type="email" name="email">
+              </div>
+              <div>
+                <label class="input-title">Phone</label>
+                <input type="number" name="phone">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-container">
+          <aside>
+            <a href="#" target="_blank" class="response-button response-button_primary">
+              Submit
+            </a>
+          </aside>
+        </div>
+      </form>
+      <div class="update-container" style="display: none;"></div>
+    </div>
   </div>
 
   <!--FOOTER-->
@@ -61,10 +124,10 @@
       <h3>Response Magazine</h3>
       <div class="footer-items-container">
         <div class="footer-items-wrapper">
-          <a class="text">Manage your subscription</a>
+          <a class="text" href="manage-subscription.html">Manage your subscription</a>
         </div>
         <div class="footer-items-wrapper">
-          <a class="text">contact us</a>
+          <a class="text" href="contact.html">contact us</a>
         </div>
         <div class="footer-items-wrapper">
           <a class="text">about response</a>
