@@ -251,13 +251,13 @@
     text-transform: uppercase;
 }
 
-.response-button_primary{
+.response-button_primary {
     background-color: #232529;
     border: 2px solid #232529;
     color: white;
     box-shadow: 4px 4px rgba(0,0,0,0.2);
 }
-.response-button_primary:hover{
+.response-button_primary:hover {
     background-color: #333333;
     box-shadow: none;
     transform: translate(4px, 4px);
