@@ -104,7 +104,7 @@ main {
     /*padding: 0px;*/
     gap: 64px;
     position: absolute;
-    left: 0px;
+    left: 0;
     padding-bottom: 95rem;
     width: 100%;
 }
@@ -205,7 +205,7 @@ section {
 }
 
 .body-section .section-header {
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -422,6 +422,92 @@ section {
     text-transform: capitalize;
     color: #FFFFFF;
 }
+
+.article-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    /*isolation: isolate;*/
+    width: 100%;
+    height: auto;
+}
+
+.article-card-container img {
+    width: 100%;
+    height: 612px;
+    object-fit: cover;
+}
+
+.article-card-container .article-info-container {
+    width: 68%;
+    margin-top: -80px;
+    padding: 24px;
+    gap: 24px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-card-container .article-info-container .title-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+}
+
+.article-card-container .article-info-container .title-author h3 {
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    margin: 0;
+    color: #000004;
+}
+
+.article-card-container .article-info-container .title-author h4 {
+    margin: 0;
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #221E1F;
+}
+
+.article-card-container .article-info-container .date {
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #69757A;
+}
+
+.content {
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
+    font-style: normal;
+    line-height: 36px;
+    font-weight: 325;
+}
+
+.content p {
+    width: 64%;
+    margin: 0 calc(16% + 32px) 36px auto;
+    font-size: 22px;
+}
+
+.content h3 {
+    width: 64%;
+    margin: 0 calc(16% + 32px) 36px auto;
+    font-size: 30px;
+}
+
+
 /*2--RECENT ISSUES--*/
 /*1-MAIN*/
 
@@ -462,6 +548,14 @@ section {
     line-height: 88px;
     text-transform: capitalize;
     color: #000000;
+}
+
+.footer-magazine {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #000000;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .footer-container .footer-wrapper .footer-items-container {
