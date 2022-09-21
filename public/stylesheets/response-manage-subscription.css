@@ -29,7 +29,7 @@
 /*}*/
 
 .subscription-container select {
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -55,7 +55,7 @@
 
 .subscription-container .content h2 {
     width: 100%;
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
@@ -114,7 +114,7 @@
 }
 
 .subscription-container .dropdown .action-text {
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -188,7 +188,7 @@
 }
 
 .sub-desc {
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -286,7 +286,7 @@ input {
 }
 
 label {
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;

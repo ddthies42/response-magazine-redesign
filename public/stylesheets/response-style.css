@@ -29,7 +29,7 @@ header nav {
     align-items: center;
     justify-content: center;
     position: fixed;
-    left: 0px;
+    left: 0;
     width: 100%;
     z-index: 100;
 }
@@ -62,7 +62,7 @@ header nav a span {
 
 .response-nav {
     color: #000000;
-    font-family: 'SangBleu Empire';
+    font-family: 'SangBleu Empire', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -165,7 +165,7 @@ section {
 }
 
 .featured-content > div:first-of-type h4 {
-    font-family: 'SangBleu Empire';
+    font-family: 'SangBleu Empire', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -177,7 +177,7 @@ section {
 }
 
 .featured-content > div:first-of-type p {
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -344,13 +344,13 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 12px;
     width: 100%;
 }
 
 .body-section .issue-article-container .text .heading-content .category {
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -361,7 +361,7 @@ section {
 }
 
 .body-section .issue-article-container .text .heading-content .title {
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -371,7 +371,7 @@ section {
 }
 
 .body-section .issue-article-container .text .date {
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -437,14 +437,7 @@ section {
 
 /*3---CARD IMAGE---*/
 .body-section .issue-article-container .issue-card img {
-    display: block;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    /*width: 282px;*/
-    height: 297px;
-    object-fit: cover;
 }
 @media only screen and (max-width: 1279px) {
     .body-section .issue-article-container .issue-card img {
@@ -470,7 +463,7 @@ section {
 }
 
 .body-section .issue-article-container .issue-card .text .quarter {
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -481,7 +474,7 @@ section {
 }
 
 .body-section .issue-article-container .issue-card .text .title {
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -500,7 +493,7 @@ section {
 }
 
 .body-section .view-more-btn div {
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -745,7 +738,7 @@ section {
 }
 
 .footer-container .footer-wrapper .footer-items-container .footer-items-wrapper .text {
-    font-family: 'Trade Gothic Next LT Pro';
+    font-family: 'Trade Gothic Next LT Pro', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -778,7 +771,7 @@ section {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 16px;
     width: 100%;
 }
