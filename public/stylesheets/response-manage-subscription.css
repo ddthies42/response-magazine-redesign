@@ -1,3 +1,59 @@
+@font-face {
+    font-family: "Trade Gothic Next LT Pro Light";
+    src: url("../font/TradeGothicLTPro-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Trade Gothic Next LT Pro";
+    src: url("../font/TradeGothicLTPro.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Trade Gothic Next LT Pro Bold";
+    src: url("../font/TradeGothicLTPro-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Trade Gothic Next LT Pro Bold 2";
+    src: url("../font/TradeGothicLTPro-Bd2.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sang Bleu Empire';
+    src: url('../font/SangBleuEmpire-Regular.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sang Bleu Empire Medium';
+    src: url('../font/SangBleuEmpire-Medium.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sang Bleu Empire Bold';
+    src: url('../font/SangBleuEmpire-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sang Bleu Empire Black';
+    src: url('../font/SangBleuEmpire-Black.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
 .subscription-container {
     box-sizing: border-box;
     display: flex;
@@ -30,8 +86,6 @@
 
 .subscription-container select {
     font-family: 'Trade Gothic Next LT Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     color: black;
     padding: 32px;
@@ -67,8 +121,6 @@
 .subscription-container .content p {
     width: 100%;
     font-family: 'Trade Gothic Next LT Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.05em;
@@ -115,8 +167,6 @@
 
 .subscription-container .dropdown .action-text {
     font-family: 'Trade Gothic Next LT Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 25px;
     display: flex;
@@ -139,7 +189,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 64px;
     width: 100%;
 }
@@ -148,7 +198,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 16px;
     width: 100%;
 }
@@ -189,8 +239,6 @@
 
 .sub-desc {
     font-family: 'Trade Gothic Next LT Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     text-transform: capitalize;
@@ -261,7 +309,7 @@
     border-radius: 2px;
     transition: all 0.2s ease;
     font-size: 1.2rem;
-    font-family: 'Trade Gothic LT Pro', Arial, sans-serif;
+    font-family: 'Trade Gothic LT Pro', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -287,8 +335,6 @@ input {
 
 label {
     font-family: 'Trade Gothic Next LT Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 25px;
     display: flex;
@@ -298,7 +344,7 @@ label {
 }
 
 p {
-    margin: 0em;
+    margin: 0;
 }
 
 /*Form*/
