@@ -18,7 +18,10 @@
 <!--MAIN -->
 <!--HEADER -->
 <header>
-  <nav class="response-nav-bar" role="navigation">
+  <a class="response-nav" href="response-index.html">
+    <span>Response</span>
+  </a>
+  <nav id="response-nav-bar" role="navigation" class>
     <a class="response-nav" href="response-index.html">
       <span>Response</span>
     </a>
@@ -38,6 +41,32 @@
       <span>About</span>
     </a>
   </nav>
+  <div id="menu-item">
+    <a class="menu-items" href="#">
+      <span>Campus</span>
+    </a>
+    <a class="menu-items" href="#">
+      <span>Alumni</span>
+    </a>
+    <a class="menu-items" href="#">
+      <span>Features</span>
+    </a>
+    <a class="menu-items" href="#">
+      <span>Notes</span>
+    </a>
+    <a class="menu-items" href="#">
+      <span>About</span>
+    </a>
+  </div>
+  <!--    HAMBURGER-->
+  <button id="hamburger" class>
+    <div>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </button>
 </header>
 <!--HEADER -->
 <main role="main" class="main-content">
@@ -92,5 +121,18 @@
 </main>
 <!--MAIN -->
 
+<script>
+  let hamburger = document.getElementById('hamburger');
+  let nav = document.getElementById('response-nav-bar');
+  hamburger.addEventListener('click', function() {
+    if(hamburger.classList.contains('open')) {
+      hamburger.classList.remove('open');
+      nav.classList.remove('open');
+    } else {
+      hamburger.classList.add('open');
+      nav.classList.add('open');
+    }
+  });
+</script>
 </body>
 </html>
