@@ -141,14 +141,18 @@ header .response-nav {
 }
 
 @media (max-width: 1024px) {
+    header {
+        display: inline-block;
+    }
     header .response-nav {
         display: flex;
         justify-content: center;
+        align-items: center;
         text-transform: uppercase;
         text-align: center;
         text-decoration: none;
         position: relative;
-        height: 100%;
+        height: 50px;
     }
 
     header nav {
@@ -294,6 +298,12 @@ main {
     left: 0;
     padding-bottom: 95rem;
     width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-content {
+        padding-bottom: 80rem;
+    }
 }
 
 /*2--FEATURED CONTENT--*/
