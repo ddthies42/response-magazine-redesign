@@ -1,48 +1,48 @@
 @font-face {
-    font-family: "Trade Gothic Next LT Pro Light";
-    src: url("../font/TradeGothicLTPro-Light.ttf");
+    font-family: "Inter Light";
+    src: url("../font/Inter-Light.ttf");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Trade Gothic Next LT Pro";
-    src: url("../font/TradeGothicLTPro.ttf");
+    font-family: "Inter Regular";
+    src: url("../font/Inter-Regular.ttf");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Trade Gothic Next LT Pro Bold";
-    src: url("../font/TradeGothicLTPro-Bold.ttf");
+    font-family: "Inter Bold";
+    src: url("../font/Inter-Bold.ttf");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Trade Gothic Next LT Pro Bold 2";
-    src: url("../font/TradeGothicLTPro-Bd2.ttf");
+    font-family: "Inter SemiBold";
+    src: url("../font/Inter-SemiBold.ttf");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sang Bleu Empire';
-    src: url('../font/SangBleuEmpire-Regular.otf');
+    src: url('../font/sangbleuempire-regular.ttf');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sang Bleu Empire Medium';
-    src: url('../font/SangBleuEmpire-Medium.otf');
+    src: url('../font/sangbleuempire-medium.ttf');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sang Bleu Empire Bold';
-    src: url('../font/SangBleuEmpire-Bold.otf');
+    src: url('../font/sangbleuempire-bold.ttf');
     font-weight: 700;
     font-style: normal;
 }
@@ -73,7 +73,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    min-height: 50px;
+    min-height: 36px;
     width: 100%;
     background-color: white;
     border: 1px solid black;
@@ -92,7 +92,7 @@ header nav {
 
 nav .menu-items {
     color: #5C5C5C;
-    font-family: 'Trade Gothic Next LT Pro', sans-serif;
+    font-family: 'Inter SemiBold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -114,21 +114,12 @@ header nav a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 50px;
+    min-height: 36px;
     background-color: white;
     border: 1px solid black;
     border-left: none;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-header nav .response-nav {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    position: relative;
 }
 
 header .response-nav {
@@ -140,10 +131,80 @@ header .response-nav {
     position: relative;
 }
 
+header .top-nav {
+    position: relative;
+    overflow: hidden;
+    padding: 12px 32px;
+}
+
+header .top-nav .top-nav-left {
+    float: left;
+}
+
+header .top-nav .top-nav-centered {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+header .top-nav .top-nav-centered .response-nav {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+header .top-nav .top-nav-right {
+    float: right;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #hamburger {
+    display: none;
+}
+
+.search-tool {
+    display: none;
+}
+
 @media (max-width: 1024px) {
+    .search-tool {
+        float: left;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50px;
+        margin: 0;
+    }
+
+    .search-tool img {
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translate(-50%, -50%);
+    }
     header {
         display: inline-block;
     }
+
+    header .top-nav {
+        display: none;
+    }
+
     header .response-nav {
         display: flex;
         justify-content: center;
@@ -273,7 +334,7 @@ header .response-nav {
 
 .response-nav {
     color: #000000;
-    font-family: 'SangBleu Empire Black', serif;
+    font-family: 'Sang Bleu Empire Bold', serif;
     font-size: 24px;
     text-transform: uppercase;
     margin: auto;
@@ -365,7 +426,7 @@ section {
 }
 
 .featured-content > div:first-of-type h1 {
-    font-family: 'SangBleu Empire Bold', serif;
+    font-family: 'Sang Bleu Empire Bold', serif;
     font-size: 60px;
     line-height: 82px;
     display: flex;
@@ -374,7 +435,7 @@ section {
 }
 
 .featured-content > div:first-of-type h4 {
-    font-family: 'SangBleu Empire', serif;
+    font-family: 'Sang Bleu Empire', serif;
     font-size: 20px;
     line-height: 37px;
     display: flex;
@@ -384,7 +445,7 @@ section {
 }
 
 .featured-content > div:first-of-type p {
-    font-family: 'Trade Gothic Next LT Pro Bold', sans-serif;
+    font-family: 'Inter SemiBold', sans-serif;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -448,7 +509,7 @@ section {
 }
 
 .body-section .section-header {
-    font-family: 'Trade Gothic Next LT Pro Bold', sans-serif;
+    font-family: 'Inter Bold', sans-serif;
     font-size: 20px;
     line-height: 31px;
     letter-spacing: 0.35em;
@@ -553,7 +614,7 @@ section {
 }
 
 .body-section .issue-article-container .text .heading-content .category {
-    font-family: 'Trade Gothic Next LT Pro Bold', sans-serif;
+    font-family: 'Inter SemiBold', sans-serif;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -562,7 +623,7 @@ section {
 }
 
 .body-section .issue-article-container .text .heading-content .title {
-    font-family: 'Trade Gothic Next LT Pro Bold', sans-serif;
+    font-family: 'Inter SemiBold', sans-serif;
     font-size: 26px;
     line-height: 31px;
     color: #3E2B2E;
@@ -570,7 +631,7 @@ section {
 }
 
 .body-section .issue-article-container .text .date {
-    font-family: 'Trade Gothic Next LT Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 19px;
     color: #221E1F;
@@ -677,7 +738,7 @@ section {
 }
 
 .body-section .issue-article-container .issue-card .text .quarter {
-    font-family: 'Trade Gothic Next LT Pro Bold', sans-serif;
+    font-family: 'Inter SemiBold', sans-serif;
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.02em;
@@ -686,7 +747,7 @@ section {
 }
 
 .body-section .issue-article-container .issue-card .text .title {
-    font-family: 'Trade Gothic Next LT Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.02em;
@@ -703,7 +764,7 @@ section {
 }
 
 .body-section .view-more-btn div {
-    font-family: 'Trade Gothic Next LT Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 22px;
     line-height: 28px;
     letter-spacing: 0.05em;
@@ -756,7 +817,7 @@ section {
 }
 
 .title-author h3 {
-    font-family: 'SangBleu Empire Bold', serif;
+    font-family: 'Sang Bleu Empire Bold', serif;
     font-size: 52px;
     margin: 0;
     color: #000004;
@@ -764,20 +825,20 @@ section {
 
 .title-author h4 {
     margin: 0;
-    font-family: 'Trade Gothic Next LT Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 32px;
     color: #221E1F;
 }
 
 .date {
-    font-family: 'Trade Gothic Next LT Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 28px;
     color: #69757A;
 }
 
 .content {
-    font-family: 'Trade Gothic Next LT Pro Light', sans-serif;
+    font-family: 'Inter Light', sans-serif;
     line-height: 36px;
 }
 
@@ -892,7 +953,7 @@ section {
 }
 
 .footer-container .footer-wrapper h3 {
-    font-family: 'SangBleu Empire Black', serif;
+    font-family: 'Sang Bleu Empire Bold', serif;
     font-size: 54px;
     line-height: 88px;
     text-transform: capitalize;
@@ -937,7 +998,7 @@ section {
 }
 
 .footer-container .footer-wrapper .footer-items-container .footer-items-wrapper .text {
-    font-family: 'Trade Gothic Next LT Pro Bold', sans-serif;
+    font-family: 'Inter SemiBold', sans-serif;
     font-size: 25px;
     line-height: 31px;
     display: flex;
@@ -979,7 +1040,7 @@ section {
 }
 
 .footer-container .footer-wrapper .copyright {
-    font-family: 'Trade Gothic Next LT Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 15px;
     line-height: 19px;
     display: flex;
