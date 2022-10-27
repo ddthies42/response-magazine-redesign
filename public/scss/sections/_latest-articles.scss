@@ -1,3 +1,5 @@
+@import "public/scss/abstracts/variables";
+
 .body-section {
   display: flex;
   flex-direction: column;
@@ -7,6 +9,94 @@
   gap: 60px;
   width: 100%;
   /*max-width: 1512px;*/
+
+  .section-header {
+    font-family: 'Inter Bold', sans-serif;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: $color-base;
+    border-bottom: 7px solid $color-base;
+    width: 100%;
+  }
+
+  .issue-article-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    .article-card {
+      position: relative;
+      width: 100%;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 48px;
+      gap: 24px;
+
+      a:hover {
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: #000004;
+        text-underline-offset: 4px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        /*width: 282px;*/
+        height: 297px;
+        object-fit: cover;
+      }
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+      gap: 8px;
+
+      .heading-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 12px;
+        width: 100%;
+
+        .category {
+          font-family: 'Inter SemiBold', sans-serif;
+          font-size: 16px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: $color-gray;
+          width: 100%;
+        }
+
+        .title {
+          font-family: 'Inter SemiBold', sans-serif;
+          font-size: 26px;
+          line-height: 31px;
+          color: #3E2B2E;
+          width: 100%;
+        }
+      }
+
+      .date {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        color: #221E1F;
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 744px) {
@@ -16,140 +106,50 @@
   }
 }
 
-@media only screen and (max-width: 1279px) and (min-width: 745px) {
-  .body-section {
-    padding: 0 32px;
-    gap: 32px;
-  }
-}
-
-.body-section .section-header {
-  font-family: 'Inter Bold', sans-serif;
-  font-size: 20px;
-  line-height: 31px;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: #000000;
-  border-bottom: 7px solid black;
-  width: 100%;
-}
-
-.body-section .issue-article-container {
-  display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-
-/*2--LATEST ARTICLES--*/
-.body-section .issue-article-container .article-card {
-  position: relative;
-  width: 100%;
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 48px;
-  gap: 24px;
-}
-
-.body-section .issue-article-container .article-card a:hover {
-  text-decoration-line: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-color: #000004;
-  text-underline-offset: 4px;
-}
-
 @media only screen and (min-width: 1280px) {
-  .body-section .issue-article-container .article-card:nth-child(4n+1) {
-    flex: 0 0 25%;
-    padding: 0 24px 0 0;
-    box-shadow: none;
-  }
+  .body-section .issue-article-container {
+    .article-card:nth-child(4n+1) {
+      flex: 0 0 25%;
+      padding: 0 24px 0 0;
+      box-shadow: -0.5px 0 0 0 black;
+    }
 
-  .body-section .issue-article-container .article-card:nth-child(4n+2) {
-    flex: 0 0 25%;
-    padding: 0 24px;
-    box-shadow: -0.5px 0 0 0 black;
-  }
+    .article-card:nth-child(4n+2) {
+      flex: 0 0 25%;
+      padding: 0 24px;
+      box-shadow: -0.5px 0 0 0 black;
+    }
 
-  .body-section .issue-article-container .article-card:nth-child(4n+3) {
-    flex: 0 0 25%;
-    padding: 0 24px;
-    box-shadow: -0.5px 0 0 0 black;
-  }
+    .article-card:nth-child(4n+3) {
+      flex: 0 0 25%;
+      padding: 0 24px;
+      box-shadow: -0.5px 0 0 0 black;
+    }
 
-  .body-section .issue-article-container .article-card:nth-child(4n) {
-    flex: 0 0 25%;
-    padding: 0 0 0 24px;
-    box-shadow: -0.5px 0 0 0 black;
+    .article-card:nth-child(4n) {
+      flex: 0 0 25%;
+      padding: 0 0 0 24px;
+      box-shadow: -0.5px 0 0 0 black;
+    }
   }
 }
 
 @media only screen and (max-width: 1279px) and (min-width: 744px) {
-  .body-section .issue-article-container .article-card:nth-child(2n+1) {
-    flex: 0 0 50%;
-    padding: 0 32px 0 0;
-    margin-bottom: 16px;
+  .body-section {
+    padding: 0 32px;
+    gap: 32px;
+
+    .issue-article-container {
+      .article-card:nth-child(2n+1) {
+        flex: 0 0 50%;
+        padding: 0 32px 0 0;
+        margin-bottom: 16px;
+      }
+      .article-card:nth-child(2n) {
+        flex: 0 0 50%;
+        margin-bottom: 16px;
+      }
+    }
   }
-
-  .body-section .issue-article-container .article-card:nth-child(2n) {
-    flex: 0 0 50%;
-    margin-bottom: 16px;
-  }
-}
-
-/*3---CARD IMAGE---*/
-.body-section .issue-article-container .article-card img {
-  display: block;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  /*width: 282px;*/
-  height: 297px;
-  object-fit: cover;
-}
-/*3---CARD IMAGE---*/
-
-.body-section .issue-article-container .text {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: space-between;
-  gap: 8px;
-}
-
-.body-section .issue-article-container .text .heading-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  gap: 12px;
-  width: 100%;
-}
-
-.body-section .issue-article-container .text .heading-content .category {
-  font-family: 'Inter SemiBold', sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #5C5C5C;
-  width: 100%;
-}
-
-.body-section .issue-article-container .text .heading-content .title {
-  font-family: 'Inter SemiBold', sans-serif;
-  font-size: 26px;
-  line-height: 31px;
-  color: #3E2B2E;
-  width: 100%;
-}
-
-.body-section .issue-article-container .text .date {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  color: #221E1F;
-  width: 100%;
 }
 /*2--LATEST ARTICLES--*/

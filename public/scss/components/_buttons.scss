@@ -1,4 +1,4 @@
-
+@import "public/scss/abstracts/variables";
 
 .view-more-button {
   display: flex;
@@ -14,7 +14,7 @@
     line-height: 28px;
     letter-spacing: 0.05em;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: $color-white;
   }
 }
 
@@ -33,18 +33,18 @@
   display: inline-block;
   margin: 1em  .6em  .6em  0;
   padding: .8em 1.6em;
-  border: 2px solid black;
-  border-radius: 2px;
+  border: 2px solid $color-base;
+  border-radius: $border-radius;
   transition: all 0.2s ease;
   font-size: 1.2rem;
-  font-family: 'Trade Gothic LT Pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .response-button_primary {
-  background-color: #232529;
-  border: 2px solid #232529;
+  background-color: $color-warm-black;
+  border: 2px solid $color-warm-black;
   color: white;
   box-shadow: 4px 4px rgba(0,0,0,0.2);
 }
