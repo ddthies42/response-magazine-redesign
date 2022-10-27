@@ -1,0 +1,256 @@
+.subscription-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 98px 254px 98px 104px;
+  gap: 72px;
+  width: 100%;
+  height: auto;
+  float: right;
+  border-width: 0 0 30px 30px;
+  border-style: solid;
+  border-color: black;
+  margin-left: 120px;
+}
+
+.subscription-container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 30px;
+  width: 100%;
+  height: auto;
+}
+
+/*.subscription-container form {*/
+/*    width: 100%;*/
+/*}*/
+
+.subscription-container select {
+  font-family: 'Trade Gothic Next LT Pro', sans-serif;
+  font-size: 20px;
+  color: black;
+  padding: 32px;
+  border-radius: 2px;
+  width: 100%;
+  /*background: #FFFFFF;*/
+  border: 1px solid #D6D6D6;
+  box-shadow: 0 4px 20px -10px rgba(0, 0, 0, 0.25);
+  /*border-right: 32px solid transparent;*/
+  background: url("public/images/icon--arrow drop down.svg") no-repeat calc(100% - 32px) 50% white;
+  -webkit-appearance: none;
+}
+
+.subscription-container select option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 16px 32px;
+}
+
+.subscription-container .content h2 {
+  width: 100%;
+  font-family: 'Trade Gothic Next LT Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 70px;
+  text-transform: capitalize;
+  color: #232529;
+}
+
+.subscription-container .content p {
+  width: 100%;
+  font-family: 'Trade Gothic Next LT Pro', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #232529;
+}
+
+@media only screen and (max-width: 834px) {
+  .subscription-container {
+    margin-left: 16px;
+    padding: 48px 52px 48px 52px;
+  }
+  .subscription-container .content h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .subscription-container .content p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.subscription-container .dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 32px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #D6D6D6;
+  box-shadow: 0 4px 20px -10px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.subscription-container .dropdown:hover .action-text {
+
+}
+
+.subscription-container .dropdown select {
+  width: 100%;
+  padding: 32px;
+
+}
+
+.subscription-container .dropdown .action-text {
+  font-family: 'Trade Gothic Next LT Pro', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #232529;
+}
+
+.subscription-container .dropdown i {
+  width: 40px;
+  height: 40px;
+  background: inherit;
+}
+
+.subscription-container .dropdown .dropdown-items {
+  display: block;
+}
+
+/*Form*/
+.subscribe--action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 64px;
+  width: 100%;
+}
+
+.subscribe--action .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 16px;
+  width: 100%;
+}
+
+.subscribe--action .inputs .name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  width: 100%;
+}
+
+.subscribe--action .inputs .name .input-title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 0;
+  gap: 10px;
+  width: 100%;
+}
+
+.double-field-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 20px;
+  width: 100%;
+}
+
+.double-field-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  width: 100%;
+}
+
+.sub-desc {
+  font-family: 'Trade Gothic Next LT Pro', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #858585;
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+.subscribe--action .inputs .address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  width: 100%;
+}
+
+.subscribe--action .inputs .address .input-title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 0;
+  gap: 10px;
+  width: 100%;
+}
+
+.subscribe--action .inputs .address .lines-city {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  width: 100%;
+}
+
+.subscribe--action .inputs .address .state-zip {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 20px;
+  width: 100%;
+}
+
+.subscribe--action .inputs .email-phone {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 20px;
+  width: 100%;
+}
+
+input {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  height: 48px;
+  width: 100%;
+}
+
+label {
+  font-family: 'Trade Gothic Next LT Pro', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+p {
+  margin: 0;
+}

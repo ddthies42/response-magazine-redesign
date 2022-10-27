@@ -1,0 +1,116 @@
+/*2--FEATURED CONTENT--*/
+section {
+  position: relative;
+}
+
+.featured-content {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+
+  a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #000004;
+    text-underline-offset: 4px;
+  }
+
+  div:first-of-type {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 30px 120px;
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .featured-content {
+    display: grid;
+    grid-template-columns: 6fr;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .featured-content div:first-of-type {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 24px 32px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .featured-content div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 18px;
+    transition: 0.5s ease;
+  }
+}
+
+.featured-content > div:first-of-type h1 {
+  font-family: 'Sang Bleu Empire Bold', serif;
+  font-size: 60px;
+  line-height: 82px;
+  display: flex;
+  align-items: center;
+  color: #000004;
+}
+
+.featured-content > div:first-of-type h4 {
+  font-family: 'Sang Bleu Empire', serif;
+  font-size: 20px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #69757A;
+}
+
+.featured-content > div:first-of-type p {
+  font-family: 'Inter SemiBold', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #221E1F;
+}
+
+@media only screen and (max-width: 620px) {
+  .featured-content > div:first-of-type h1 {
+    font-size: 32px;
+    line-height: 12px;
+  }
+  .featured-content > div:first-of-type h4 {
+    font-size: 16px;
+  }
+  .featured-content > div:first-of-type p {
+    font-size: 12px;
+  }
+}
+
+.featured-content > div:last-of-type {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+}
+
+.featured-img {
+  background-image: url('public/images/MIKE-11-scaled_1210x580_acf_cropped.jpeg');
+  /*height:100%;*/
+  padding-bottom: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*border-left: 1px solid black;*/
+  position: relative;
+}
+/*2--FEATURED CONTENT--*/

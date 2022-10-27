@@ -1,0 +1,114 @@
+/*2--RECENT ISSUES--*/
+.body-section .issue-article-container .issue-card {
+  position: relative;
+  width: 100%;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .body-section .issue-article-container .issue-card:nth-child(6n+1) {
+    flex: 0 0 16.66%;
+    padding: 0 20px 0 0;
+  }
+
+  .body-section .issue-article-container .issue-card:nth-child(6n+2) {
+    flex: 0 0 16.66%;
+    padding: 0 20px;
+  }
+
+  .body-section .issue-article-container .issue-card:nth-child(6n+3) {
+    flex: 0 0 16.66%;
+    padding: 0 20px;
+  }
+
+  .body-section .issue-article-container .issue-card:nth-child(6n+4) {
+    flex: 0 0 16.66%;
+    padding: 0 20px;
+  }
+
+  .body-section .issue-article-container .issue-card:nth-child(6n+5) {
+    flex: 0 0 16.66%;
+    padding: 0 20px;
+  }
+
+  .body-section .issue-article-container .issue-card:nth-child(6n) {
+    flex: 0 0 16.66%;
+    padding: 0 0 0 20px;
+  }
+}
+
+@media only screen and (max-width: 1390px) and (min-width: 376px) {
+  .body-section .issue-article-container .issue-card:nth-child(2n+1) {
+    flex: 0 0 50%;
+    padding: 0 8px 0 0;
+    margin-bottom: 16px;
+  }
+
+  .body-section .issue-article-container .issue-card:nth-child(2n) {
+    flex: 0 0 50%;
+    padding-left: 8px;
+    margin-bottom: 16px;
+  }
+}
+
+
+/*3---CARD IMAGE---*/
+.body-section .issue-article-container .issue-card img {
+  display: block;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  /*width: 282px;*/
+  height: 16vw;
+  object-fit: cover;
+}
+@media only screen and (max-width: 1390px) and (min-width: 376px) {
+  .body-section .issue-article-container .issue-card img {
+    height: 48vw;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .body-section .issue-article-container .issue-card img {
+    height: 120vw;
+  }
+}
+
+/*3---CARD IMAGE---*/
+
+.body-section .issue-article-container .issue-card .text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.body-section .issue-article-container .issue-card .text a:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: white;
+  text-underline-offset: 4px;
+}
+
+.body-section .issue-article-container .issue-card .text .quarter {
+  font-family: 'Inter SemiBold', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.body-section .issue-article-container .issue-card .text .title {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}

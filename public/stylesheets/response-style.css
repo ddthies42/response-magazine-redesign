@@ -1,55 +1,55 @@
 @font-face {
     font-family: "Inter Light";
-    src: url("../font/Inter-Light.ttf");
+    src: url("public/fonts/Inter-Light.ttf");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inter Regular";
-    src: url("../font/Inter-Regular.ttf");
+    src: url("public/fonts/Inter-Regular.ttf");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inter Bold";
-    src: url("../font/Inter-Bold.ttf");
+    src: url("public/fonts/Inter-Bold.ttf");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inter SemiBold";
-    src: url("../font/Inter-SemiBold.ttf");
+    src: url("public/fonts/Inter-SemiBold.ttf");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sang Bleu Empire';
-    src: url('../font/sangbleuempire-regular.ttf');
+    src: url('public/fonts/sangbleuempire-regular.ttf');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sang Bleu Empire Medium';
-    src: url('../font/sangbleuempire-medium.ttf');
+    src: url('public/fonts/sangbleuempire-medium.ttf');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sang Bleu Empire Bold';
-    src: url('../font/sangbleuempire-bold.ttf');
+    src: url('public/fonts/sangbleuempire-bold.ttf');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sang Bleu Empire Black';
-    src: url('../font/SangBleuEmpire-Black.otf');
+    src: url('public/fonts/SangBleuEmpire-Black.otf');
     font-weight: 800;
     font-style: normal;
 }

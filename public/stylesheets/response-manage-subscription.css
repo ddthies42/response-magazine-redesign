@@ -1,55 +1,55 @@
 @font-face {
     font-family: "Trade Gothic Next LT Pro Light";
-    src: url("../font/TradeGothicLTPro-Light.ttf");
+    src: url("public/fonts/TradeGothicLTPro-Light.ttf");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Trade Gothic Next LT Pro";
-    src: url("../font/TradeGothicLTPro.ttf");
+    src: url("public/fonts/TradeGothicLTPro.ttf");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Trade Gothic Next LT Pro Bold";
-    src: url("../font/TradeGothicLTPro-Bold.ttf");
+    src: url("public/fonts/TradeGothicLTPro-Bold.ttf");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Trade Gothic Next LT Pro Bold 2";
-    src: url("../font/TradeGothicLTPro-Bd2.ttf");
+    src: url("public/fonts/TradeGothicLTPro-Bd2.ttf");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sang Bleu Empire';
-    src: url('../font/SangBleuEmpire-Regular.otf');
+    src: url('public/fonts/SangBleuEmpire-Regular.otf');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sang Bleu Empire Medium';
-    src: url('../font/SangBleuEmpire-Medium.otf');
+    src: url('public/fonts/SangBleuEmpire-Medium.otf');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sang Bleu Empire Bold';
-    src: url('../font/SangBleuEmpire-Bold.otf');
+    src: url('public/fonts/SangBleuEmpire-Bold.otf');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sang Bleu Empire Black';
-    src: url('../font/SangBleuEmpire-Black.otf');
+    src: url('public/fonts/SangBleuEmpire-Black.otf');
     font-weight: 500;
     font-style: normal;
 }
@@ -320,6 +320,7 @@
     color: white;
     box-shadow: 4px 4px rgba(0,0,0,0.2);
 }
+
 .response-button_primary:hover {
     background-color: #333333;
     box-shadow: none;

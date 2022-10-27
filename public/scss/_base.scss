@@ -1,0 +1,35 @@
+body {
+  gap: 0;
+  position: relative;
+  min-height: 100vh;
+}
+a {
+  vertical-align: baseline;
+}
+
+a:active, a:hover, a:link, a:visited {
+  text-decoration: none;
+}
+
+main {
+  display: block;
+  gap: 64px;
+  margin-top: 50px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  position: absolute;
+  left: 0;
+  padding-bottom: 95rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content {
+    padding-bottom: 80rem;
+  }
+}

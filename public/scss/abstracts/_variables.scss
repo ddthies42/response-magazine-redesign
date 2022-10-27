@@ -1,0 +1,73 @@
+//fonts
+@font-face {
+  font-family: "Inter Light";
+  src: url("public/fonts/Inter-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  src: url("public/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("public/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter SemiBold";
+  src: url("public/fonts/Inter-SemiBold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sang Bleu Empire';
+  src: url('public/fonts/sangbleuempire-regular.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sang Bleu Empire Medium';
+  src: url('public/fonts/sangbleuempire-medium.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sang Bleu Empire Bold';
+  src: url('public/fonts/sangbleuempire-bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sang Bleu Empire Black';
+  src: url('public/fonts/SangBleuEmpire-Black.otf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+//colors
+$color-base: black;
+$color-legacy-maroon-2: #872937;
+$color-gray: #5C5C5C;
+$color-warm-black: #232529;
+$color-white: white;
+
+//borders
+$border: 1px solid $color-base;
+$border-radius: 2px;
+$border-footer: 1.5px solid $color-base;
+
+//shadows
+$box-shadow-index-issue-card: -0.5px 0 0 0 $color-base;
+$box-shadow-article-page-article: 0 4px 4px rgba(0, 0, 0, 0.25);
+$box-shadow-footer: -4px -4px 25px rgba(0, 0, 0, 0.16);
