@@ -1,16 +1,16 @@
-@import "_base.scss";
+@import "base";
 // Abstract files
-@import "abstracts/_variables.scss";
+//@import "abstracts/all";
 
 // Components
-@import "components/_buttons.scss";
+@import "components/all";
 
 // Layout
-@import "layout/all.scss";
+@import "layout/all";
 
 // Sections
-@import "sections/all.scss";
+@import "sections/all";
 
 // Pages
-@import "pages/all.scss";
+@import "pages/all";
 
