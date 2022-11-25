@@ -697,7 +697,7 @@ section {
   }
 }
 .featured-img {
-  background-image: url("public/images/MIKE-11-scaled_1210x580_acf_cropped.jpeg");
+  background-image: url("../images/MIKE-11-scaled_1210x580_acf_cropped.jpeg");
   /*height:100%;*/
   padding-bottom: 100%;
   background-position: center;
