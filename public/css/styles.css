@@ -886,13 +886,14 @@ section {
 .title-author h3 {
   font-family: "Sang Bleu Empire Bold", serif;
   font-size: 52px;
+  font-weight: bold;
   margin: 0;
   color: #000004;
 }
 .title-author h4 {
   margin: 0;
   font-family: "Inter", sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   color: #221E1F;
 }
 
