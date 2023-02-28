@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SPU Stories</title>
+    <meta name="author" content="Thy Tran">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+</head>
+<body>
+
+<!--MAIN -->
+<!--HEADER -->
+<header>
+    <div class="search-tool"><img src="images/icon-search-36px.svg" alt="Search" style="margin-left: 12px;"></div>
+    <!--    will appear in mobile-->
+    <a class="response-nav" href="response-index.html">
+        <span>Response</span>
+    </a>
+
+    <div class="top-nav">
+        <!--        Left-aligned items-->
+        <div class="top-nav-left"><a href="spu-stories.html"><img src="images/spu-stories-logo.svg" alt="SPU Stories"></a></div>
+        <!--        Left-aligned items-->
+        <!--        Right-aligned items-->
+        <div class="top-nav-right">
+            <a href="https://stories.spu.edu/topic/response-magazine/"><img src="images/response-logo.svg" alt="Response Magazine Logo" width="120"></a>
+            <img src="images/icon-search-36px.svg" alt="Search" style="margin-left: 12px;">
+        </div>
+        <!--        Right-aligned items-->
+    </div>
+
+    <nav id="response-nav-bar" role="navigation" class>
+        <a class="menu-items" href="#">
+            <span>Campus News</span>
+        </a>
+        <a class="menu-items" href="#">
+            <span>Alumni News</span>
+        </a>
+        <a class="menu-items" href="#">
+            <span>Features</span>
+        </a>
+        <a class="menu-items" href="#">
+            <span>Reflections</span>
+        </a>
+        <a class="menu-items" href="#">
+            <span>Life at SPU</span>
+        </a>
+        <a class="menu-items" href="contact.html">
+            <span>Departments</span>
+        </a>
+    </nav>
+    <div id="menu-item">
+        <a class="menu-items" href="#">
+            <span>Campus</span>
+        </a>
+        <a class="menu-items" href="#">
+            <span>Alumni</span>
+        </a>
+        <a class="menu-items" href="#">
+            <span>Features</span>
+        </a>
+        <a class="menu-items" href="#">
+            <span>Notes</span>
+        </a>
+        <a class="menu-items" href="#">
+            <span>About</span>
+        </a>
+        <a class="menu-items" href="contact.html">
+            <span>Contact Us</span>
+        </a>
+    </div>
+    <!--    HAMBURGER-->
+    <button id="hamburger" class>
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </button>
+</header>
+<!--HEADER -->
+<main role="main" class="main-content">
+    <!--FEATURED CONTENT-->
+    <section class="stories-featured-content">
+        <div>
+            <div class="stories-featured-img"></div>
+            <div class="featured-article">
+                <a href="articles/in-all-things.html">
+                    <h1>In all things, charity</h1>
+                    <h4>How can we navigate difficult conversations? A Q&A with Associate Professor of Philosophy Matthew Benton</h4>
+                    <p>By Shelly Ngo - June 23, 2022</p>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="popular-article-sec">
+                <div class="popular-header">
+                    <div class="featured-section-header">Popular Articles</div>
+                    <div class="popular-view-more">View More</div>
+                </div>
+                <div class="popular-column">
+                    <div class="popular-article-card">
+                        <div><img src="images/Matt-and-Jacinda-1-5798_1210x580_acf_cropped.jpeg"></div>
+                        <div class="text">
+                            <div class="heading-content">
+                                <div class="category">Beyond</div>
+                                <div class="title">Young minds: Papua’s most valuable resource</div>
+                            </div>
+                            <div class="date">June 23, 2022</div>
+                        </div>
+                    </div>
+                    <div class="popular-article-card">
+                        <div><img src="images/Matt-and-Jacinda-1-5798_1210x580_acf_cropped.jpeg"></div>
+                        <div class="text">
+                            <div class="heading-content">
+                                <div class="category">Beyond</div>
+                                <div class="title">Young minds: Papua’s most valuable resource</div>
+                            </div>
+                            <div class="date">June 23, 2022</div>
+                        </div>
+                    </div>
+                    <div class="popular-article-card">
+                        <div><img src="images/Matt-and-Jacinda-1-5798_1210x580_acf_cropped.jpeg"></div>
+                        <div class="text">
+                            <div class="heading-content">
+                                <div class="category">Beyond</div>
+                                <div class="title">Young minds: Papua’s most valuable resource</div>
+                            </div>
+                            <div class="date">June 23, 2022</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="response-latest-sec">
+                <div class="featured-section-header">Response Latest Issue</div>
+                <div class="response-latest-row">
+                    <div style="width: fit-content"><img src="images/issues/turning-the-table.jpg"></div>
+                    <div class="text">
+                        <div class="header">Turning The Table</div>
+                        <div class="season">Spring/Summer 2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FEATURED CONTENT-->
+
+    <!--LATEST ARTICLES-->
+    <section class="body-section">
+        <div class="section-header">Latest Articles</div>
+        <div class="issue-article-container">
+            <a href="articles/young-minds.html" title="" class="article-card">
+                <div><img src="images/Matt-and-Jacinda-1-5798_1210x580_acf_cropped.jpeg"></div>
+                <div class="text">
+                    <div class="heading-content">
+                        <div class="category">Beyond</div>
+                        <div class="title">Young minds: Papua’s most valuable resource</div>
+                    </div>
+                    <div class="date">June 23, 2022</div>
+                </div>
+            </a>
+            <a href="articles/getting-better-with-every-mile-of-the-journey.html" title="" class="article-card">
+                <div><img src="images/Photo-by-David-Oh-scaled_1210x580_acf_cropped.jpeg"></div>
+                <div class="text">
+                    <div class="heading-content">
+                        <div class="category">Beyond</div>
+                        <div class="title">Getting better with every mile of the journey</div>
+                    </div>
+                    <div class="date">June 23, 2022</div>
+                </div>
+            </a>
+            <a href="articles/turning-the-table.html" title="" class="article-card">
+                <div><img src="images/48643084723_2c1ceb3de9_o-scaled_1210x580_acf_cropped.jpeg"></div>
+                <div class="text">
+                    <div class="heading-content">
+                        <div class="category">Home</div>
+                        <div class="title">Turning the Table</div>
+                    </div>
+                    <div class="date">June 23, 2022</div>
+                </div>
+            </a>
+            <a href="articles/alissa-walter-receives-graves-award.html" title="" class="article-card">
+                <div><img src="images/2019.3.4-Alissa-Walter-Classroom-9600_1210x580_acf_cropped.jpg"></div>
+                <div class="text">
+                    <div class="heading-content">
+                        <div class="category">Home</div>
+                        <div class="title">Alissa Walter receives Graves Award</div>
+                    </div>
+                    <div class="date">June 23, 2022</div>
+                </div>
+            </a>
+            <a href="#" title="" class="article-card">
+                <div><img src="images/Rick_Reynolds_Nightwatch_2_1210x580_acf_cropped.jpeg"></div>
+                <div class="text">
+                    <div class="heading-content">
+                        <div class="category">Beyond</div>
+                        <div class="title">The night watchman</div>
+                    </div>
+                    <div class="date">June 23, 2022</div>
+                </div>
+            </a>
+            <a href="#" title="" class="article-card">
+                <div><img src="images/12388021b_1210x580_acf_cropped.jpeg"></div>
+                <div class="text">
+                    <div class="heading-content">
+                        <div class="category">Home</div>
+                        <div class="title">Tears for a beloved country</div>
+                    </div>
+                    <div class="date">June 23, 2022</div>
+                </div>
+            </a>
+            <a href="#" title="" class="article-card">
+                <div><img src="images/laarni-aguila_1210x580_acf_cropped.jpeg"></div>
+                <div class="text">
+                    <div class="heading-content">
+                        <div class="category">Home</div>
+                        <div class="title">BioCORE Scholars Program: Changing the face of medicine</div>
+                    </div>
+                    <div class="date">June 23, 2022</div>
+                </div>
+            </a>
+            <a href="articles/surrendering-life-complications.html" title="" class="article-card">
+                <div><img src="images/Complications-illustration-inline-by-matt-chinworth-hero.jpeg"></div>
+                <div class="text">
+                    <div class="heading-content">
+                        <div class="category">Home</div>
+                        <div class="title">Surrendering life’s complications</div>
+                    </div>
+                    <div class="date">December 22, 2021</div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!--LATEST ARTICLES-->
+
+    <!--SECOND FEATURED ARTICLE-->
+    <a class="second-featured-article" href="#">
+       <div class="description">
+           <div class="title">Answering God’s call to serve Ukrainian orphans</div>
+           <div class="date">December 2022</div>
+       </div>
+    </a>
+    <!--SECOND FEATURED ARTICLE-->
+
+    <!--FOOTER-->
+    <footer class="footer-container">
+        <div class="footer-wrapper">
+            <a href="spu-stories.html"><img src="images/spu-stories-logo.svg" alt="SPU Stories" width="250"></a>
+            <div class="footer-items-container">
+                <div class="footer-items-wrapper">
+                    <a class="text" href="manage-subscription.html">contact us</a>
+                </div>
+                <div class="footer-items-wrapper">
+                    <a class="text" href="contact.html">about spu stories</a>
+                </div>
+                <div class="footer-items-wrapper">
+                    <a class="text" href="#">visit  spu</a>
+                </div>
+                <div class="footer-items-wrapper">
+                    <a class="text" href="#">become a student</a>
+                </div>
+                <div class="footer-items-wrapper">
+                    <a class="text" href="#">submit a story idea</a>
+                </div>
+            </div>
+            <div class="social-media-container">
+                <img src="images/icon--facebook.svg">
+                <img src="images/icon--twitter.svg">
+                <img src="images/icon--instagram.svg">
+                <img src="images/icon--youtube.svg">
+                <img src="images/icon--linkedin.svg">
+                <img src="images/icon--tiktok.svg">
+            </div>
+            <div class="copyright">© 2022 Seattle Pacific University</div>
+        </div>
+        <div class="footer-image">
+            <img src="images/stories-footer.jpg">
+        </div>
+    </footer>
+    <!--FOOTER-->
+</main>
+<!--MAIN -->
+
+<script>
+    let hamburger = document.getElementById('hamburger');
+    let nav = document.getElementById('response-nav-bar');
+    hamburger.addEventListener('click', function() {
+        if(hamburger.classList.contains('open')) {
+            hamburger.classList.remove('open');
+            nav.classList.remove('open');
+        } else {
+            hamburger.classList.add('open');
+            nav.classList.add('open');
+        }
+    });
+</script>
+
+</body>
+</html>
