@@ -25,7 +25,7 @@ main {
   gap: 64px;
   position: absolute;
   left: 0;
-  padding-bottom: 95rem;
+  padding-bottom: 800px;
   width: 100%;
 }
 
@@ -730,8 +730,11 @@ section {
   width: 100%;
 }
 .stories-featured-content div:first-of-type .stories-featured-img {
-  background-image: url("../images/featured-article-placeholder.jpg");
-  padding-bottom: 100%;
+  /*background-image: url("../images/featured-article-placeholder.jpg");*/
+  /*padding-bottom: 100%;*/
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
